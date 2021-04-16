@@ -184,7 +184,7 @@ Other Documentations:
 
 Android Banner | Android Interstitial | Android Rewarded Video
 -------|---------------|---------------
-![ScreenShot](https://raw.githubusercontent.com/VinoosIr/tapsell-plus-cordova-plugin/main/docs/screenshot_banner.jpg) | ![ScreenShot](https://raw.githubusercontent.com/VinoosIr/tapsell-plus-cordova-plugin/main/docs/screenshot_interstitial.png) | ![ScreenShot](https://raw.githubusercontent.com/VinoosIr/tapsell-plus-cordova-plugin/main/docs/screenshot_rewarded_video.png)
+![ScreenShot](https://raw.githubusercontent.com/VinoosIr/tapsell-plus-cordova-plugin/main/docs/screenshot_banner.jpg) | ![ScreenShot](https://raw.githubusercontent.com/VinoosIr/tapsell-plus-cordova-plugin/main/docs/screenshot_interstitial.jpg) | ![ScreenShot](https://raw.githubusercontent.com/VinoosIr/tapsell-plus-cordova-plugin/main/docs/screenshot_rewarded_video.jpg)
 
 
 ## License
