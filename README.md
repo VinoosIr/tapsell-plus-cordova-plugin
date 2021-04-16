@@ -167,7 +167,7 @@ document.addEventListener('response', function(e){
 
 Quick start, simply copy & paste:
 * [Example Code](https://github.com/vinoosir/tapsell-plus-cordova-plugin/wiki/1.0-Quick-Start-Example-Code)
-* [Complete Demo index.html](https://github.com/vinoosir/tapsell-plus-cordova-plugin/blob/master/test/index.html)
+* [Complete Demo index.html](https://github.com/vinoosir/tapsell-plus-cordova-plugin/blob/main/test/index.html)
 
 API Reference:
 * [API Overview](https://github.com/vinoosir/tapsell-plus-cordova-plugin/wiki/1.1-API-Overview)
@@ -184,7 +184,7 @@ Other Documentations:
 
 Android Banner | Android Interstitial | Android Rewarded Video
 -------|---------------|---------------
-![ScreenShot](https://raw.githubusercontent.com/VinoosIr/tapsell-plus-cordova-plugin/master/docs/screenshot_banner.png) | ![ScreenShot](https://raw.githubusercontent.com/VinoosIr/tapsell-plus-cordova-plugin/master/docs/screenshot_interstitial.png) | ![ScreenShot](https://raw.githubusercontent.com/VinoosIr/tapsell-plus-cordova-plugin/master/docs/screenshot_rewarded_video.png)
+![ScreenShot](https://raw.githubusercontent.com/VinoosIr/tapsell-plus-cordova-plugin/main/docs/screenshot_banner.jpg) | ![ScreenShot](https://raw.githubusercontent.com/VinoosIr/tapsell-plus-cordova-plugin/main/docs/screenshot_interstitial.png) | ![ScreenShot](https://raw.githubusercontent.com/VinoosIr/tapsell-plus-cordova-plugin/main/docs/screenshot_rewarded_video.png)
 
 
 ## License
