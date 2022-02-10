@@ -14,7 +14,10 @@ module.exports = {
         BANNER_320x50: 1,
 		BANNER_320x100: 2,
 		BANNER_250x250: 3,
-		BANNER_300x250: 4
+		BANNER_300x250: 4,
+		BANNER_468x60: 5,
+		BANNER_728x90: 6,
+		BANNER_160x600: 7
     },
     initialize: function(appKey) {
         cordova.exec(
@@ -90,24 +93,24 @@ module.exports = {
             [ zoneId ]
         );
     },
-    showRewardedVideo: function (zoneId) {
+    showRewardedVideo: function (responseId) {
         var self = this;
         cordova.exec(
             null,
             null,
             'TapsellPlus',
             'showRewardedVideo',
-            [ zoneId ]
+            [ responseId ]
         );
     },
-    showInterstitial: function (zoneId) {
+    showInterstitial: function (responseId) {
         var self = this;
         cordova.exec(
             null,
             null,
             'TapsellPlus',
             'showInterstitial',
-            [ zoneId ]
+            [ responseId ]
         );
     }
 };

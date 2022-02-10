@@ -112,7 +112,7 @@ Step 3: Want interstitial Ad to earn more money ? Easy, 2 lines of code.
 TapsellPlus.requestInterstitial(zoneId);
 
 // show the interstitial later, e.g. at end of game level
-TapsellPlus.showInterstitial(zoneId);
+TapsellPlus.showInterstitial(responseId);
 ```
 
 Step 4: Want rewarded video Ad to earn more money ? Easy, 2 lines of code. 
@@ -122,7 +122,7 @@ Step 4: Want rewarded video Ad to earn more money ? Easy, 2 lines of code.
 TapsellPlus.requestRewardedVideo(zoneId);
 
 // show the interstitial later, e.g. at end of game level
-TapsellPlus.showRewardedVideo(zoneId);
+TapsellPlus.showRewardedVideo(responseId);
 ```
 
 ## API
@@ -141,11 +141,11 @@ hideBanner();
 
 // use interstitial
 requestInterstitial(zoneId);
-showInterstitial(backDisabled);
+showInterstitial(responseId);
 
 // use rewarded video
 requestRewardedVideo(zoneId);
-showRewardedVideo(backDisabled);
+showRewardedVideo(responseId);
 ```
 
 Events:
@@ -159,6 +159,7 @@ Events:
 document.addEventListener('response', function(e){
     var data = e.detail || e.data || e;
 	
+	responseId = data.responseId;
 	consoleLog("response. adType: " + data.adType);
 });
 ```

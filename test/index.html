@@ -78,11 +78,12 @@
 
 <body>
     <script>
+		var responseId = null;
         var zoneid = {};
         zoneid = {
-            banner: '5cfaaa4ae8d17f0001ffb295',
-            interstitial: '5cfaa9b0e8d17f0001ffb293',
-            rewardvideo: '5cfaa8aee8d17f0001ffb28f',
+            banner: '5cfaaa30e8d17f0001ffb294',
+            interstitial: '5cfaa942e8d17f0001ffb292',
+            rewardvideo: '5cfaa802e8d17f0001ffb28e',
         };
         /*zoneid = {
             banner: '5d3eb5337a9b060001892441',
@@ -111,7 +112,8 @@
             $(document).on('response', function(e) {
                 if (typeof e.originalEvent !== 'undefined') e = e.originalEvent;
                 var data = e.detail || e.data || e;
-
+				
+				responseId = data.responseId;
                 consoleLog("response. adType: " + data.adType);
             });
 
@@ -170,7 +172,7 @@
             });
 
             $('#btn_showfull').click(function() {
-                TapsellPlus.showInterstitial(zoneid.interstitial);
+                TapsellPlus.showInterstitial(responseId);
             });
 
             $('#btn_preparevideo').click(function() {
@@ -178,7 +180,7 @@
             });
 
             $('#btn_showvideo').click(function() {
-                TapsellPlus.showRewardedVideo(zoneid.rewardvideo);
+                TapsellPlus.showRewardedVideo(responseId);
             });
 
             $(document).on('backbutton', function() {
@@ -207,16 +209,19 @@
             <option value='2'>320x100</option>
             <option value='3'>250x250</option>
             <option value='4'>300x250</option>
+            <option value='5'>468x60</option>
+            <option value='6'>728x90</option>
+            <option value='7'>160x600</option>
         </select>
         <select id="adPosition">
-            <option value='0'>Top Left</option>
+            <option value='0' selected>Top Left</option>
             <option value='1'>Top Center</option>
             <option value='2'>Top Right</option>
             <option value='3'>Left</option>
             <option value='4'>Center</option>
             <option value='5'>Right</option>
             <option value='6'>Bottom Left</option>
-            <option value='7' selected>Bottom Center</option>
+            <option value='7'>Bottom Center</option>
             <option value='8'>Bottom Right</option>
         </select>
         <br/>
