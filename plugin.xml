@@ -2,7 +2,7 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="tapsell-plus-cordova-plugin"
-    version="2.1.6">
+    version="2.1.8">
     <name>Tapsell Cordova Plugin</name>
     <description>Ultimate Cordova Plugin for Tapsell to monetize hybrid apps. Show mobile Ad with single line of JavaScript. Compatible with Cordova CLI, PhoneGap Build, Ionic, etc.</description>
     <author>Milad Mohammadi Rezagah</author>	
@@ -27,7 +27,7 @@
 		</config-file>
 
 		<source-file src="src/TapsellPlusPlugin.java" target-dir="src/miladesign/cordova" />
-
+		
 		<framework src="src/build.gradle" custom="true" type="gradleReference" />
 		
 		<framework src="com.google.android.gms:play-services-ads:19.6.0" />
@@ -36,5 +36,6 @@
 			<uses-permission android:name="android.permission.INTERNET" />
 			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 		</config-file>
+		
 	</platform>
 </plugin>

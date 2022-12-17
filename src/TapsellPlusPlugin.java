@@ -113,6 +113,7 @@ public class TapsellPlusPlugin extends CordovaPlugin {
 			@Override
 			public void onInitializeSuccess(AdNetworks adNetworks) {
 			    fireEvent("tapsellplus", "onInitializeSuccess", null);
+			    TapsellPlus.setGDPRConsent(mActivity, true);
 			}
 
 			@Override
